@@ -24,13 +24,9 @@ class CatTest {
         assertEquals("Мяу", cat.getSound());
     }
 
-    @Test
-    void testGetFoodUsesPredator() throws Exception {
-        //тут
-        when(predator.eatMeat()).thenReturn(List.of("Птицы"));
-
+    @Test void testGetFoodUsesPredator() throws Exception {
+        List<String> expectedFood = List.of("Птицы");
+        when(predator.eatMeat()).thenReturn(expectedFood);
         Cat cat = new Cat(predator);
-
-        assertEquals(List.of("Птицы"), cat.getFood());
-    }
+        assertEquals(expectedFood, cat.getFood()); }
 }

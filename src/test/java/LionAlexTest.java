@@ -6,6 +6,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -27,15 +29,10 @@ class LionAlexTest {
         assertEquals(0, alex.getKittens());
     }
 
-    @Test
-    void testAlexFriendsList() throws Exception {
+    @Test void testAlexFriendsList() throws Exception {
         LionAlex alex = new LionAlex(feline);
-
-        assertEquals(3, alex.getFriends().size());
-        assertEquals("Марти", alex.getFriends().get(0));
-        assertEquals("Глория", alex.getFriends().get(1));
-        assertEquals("Мелман", alex.getFriends().get(2));
-    }
+        List<String> expected = List.of("Марти", "Глория", "Мелман");
+        assertEquals(expected, alex.getFriends()); }
 
     @Test
     void testAlexPlaceOfLiving() throws Exception {

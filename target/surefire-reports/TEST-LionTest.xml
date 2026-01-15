@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LionTest" time="0.03" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="LionTest" time="0.043" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/daryaartyushenya/Documents/YP/qa_java/target/surefire/surefirebooter-20260113173846915_3.jar /Users/daryaartyushenya/Documents/YP/qa_java/target/surefire 2026-01-13T17-38-46_862-jvmRun1 surefire-20260113173846915_1tmp surefire_0-20260113173846915_2tmp"/>
+    <property name="sun.java.command" value="/Users/daryaartyushenya/Documents/YP/qa_java/target/surefire/surefirebooter-20260115145530867_3.jar /Users/daryaartyushenya/Documents/YP/qa_java/target/surefire 2026-01-15T14-55-30_810-jvmRun1 surefire-20260115145530867_1tmp surefire_0-20260115145530867_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/daryaartyushenya/Documents/YP/qa_java/target/test-classes:/Users/daryaartyushenya/Documents/YP/qa_java/target/classes:/Users/daryaartyushenya/.m2/repository/org/mockito/mockito-junit-jupiter/5.20.0/mockito-junit-jupiter-5.20.0.jar:/Users/daryaartyushenya/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/Users/daryaartyushenya/.m2/repository/net/bytebuddy/byte-buddy/1.17.7/byte-buddy-1.17.7.jar:/Users/daryaartyushenya/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/Users/daryaartyushenya/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/daryaartyushenya/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.14.0/junit-jupiter-api-5.14.0.jar:/Users/daryaartyushenya/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/daryaartyushenya/.m2/repository/org/junit/platform/junit-platform-commons/1.14.0/junit-platform-commons-1.14.0.jar:/Users/daryaartyushenya/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/daryaartyushenya/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.14.0/junit-jupiter-params-5.14.0.jar:"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/daryaartyushenya/Documents/YP/qa_java/target/surefire/surefirebooter-20260113173846915_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/daryaartyushenya/Documents/YP/qa_java/target/surefire/surefirebooter-20260115145530867_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25.0.1"/>
@@ -64,8 +64,8 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testGetKittensUsesFeline" classname="LionTest" time="0.022">
-    <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/example/FelineInterface$MockitoMock$tnG7QcUL with JaCoCo 0.8.12.202403310830/dbfb6f2.
+  <testcase name="testGetKittensUsesFeline" classname="LionTest" time="0.029">
+    <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/example/FelineInterface$MockitoMock$AujFrsSX with JaCoCo 0.8.12.202403310830/dbfb6f2.
 	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:94)
 	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
 	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
@@ -178,7 +178,7 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.io.IOException: Error while instrumenting com/example/FelineInterface$MockitoMock$tnG7QcUL with JaCoCo 0.8.12.202403310830/dbfb6f2.
+Caused by: java.io.IOException: Error while instrumenting com/example/FelineInterface$MockitoMock$AujFrsSX with JaCoCo 0.8.12.202403310830/dbfb6f2.
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:111)
 	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:92)
@@ -191,7 +191,7 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:77)
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:109)
 	... 112 more
-java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/example/FelineInterface$MockitoMock$tnG7QcUL$auxiliary$j8Zvf8m5 with JaCoCo 0.8.12.202403310830/dbfb6f2.
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/example/FelineInterface$MockitoMock$AujFrsSX$auxiliary$ixZtxgC4 with JaCoCo 0.8.12.202403310830/dbfb6f2.
 	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:94)
 	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
 	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
@@ -304,7 +304,7 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.io.IOException: Error while instrumenting com/example/FelineInterface$MockitoMock$tnG7QcUL$auxiliary$j8Zvf8m5 with JaCoCo 0.8.12.202403310830/dbfb6f2.
+Caused by: java.io.IOException: Error while instrumenting com/example/FelineInterface$MockitoMock$AujFrsSX$auxiliary$ixZtxgC4 with JaCoCo 0.8.12.202403310830/dbfb6f2.
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:111)
 	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:92)
@@ -317,7 +317,7 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:77)
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:109)
 	... 112 more
-java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/example/FelineInterface$MockitoMock$tnG7QcUL$auxiliary$vfsyuxQT with JaCoCo 0.8.12.202403310830/dbfb6f2.
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/example/FelineInterface$MockitoMock$AujFrsSX$auxiliary$6zRHq6qv with JaCoCo 0.8.12.202403310830/dbfb6f2.
 	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:94)
 	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
 	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
@@ -430,7 +430,7 @@ java.lang.instrument.IllegalClassFormatException: Error while instrumenting com/
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: java.io.IOException: Error while instrumenting com/example/FelineInterface$MockitoMock$tnG7QcUL$auxiliary$vfsyuxQT with JaCoCo 0.8.12.202403310830/dbfb6f2.
+Caused by: java.io.IOException: Error while instrumenting com/example/FelineInterface$MockitoMock$AujFrsSX$auxiliary$6zRHq6qv with JaCoCo 0.8.12.202403310830/dbfb6f2.
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
 	at org.jacoco.agent.rt.internal_aeaf9ab.core.instr.Instrumenter.instrument(Instrumenter.java:111)
 	at org.jacoco.agent.rt.internal_aeaf9ab.CoverageTransformer.transform(CoverageTransformer.java:92)
@@ -445,8 +445,8 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 	... 112 more
 ]]></system-err>
   </testcase>
-  <testcase name="testLionHasManeIfMale" classname="LionTest" time="0.001"/>
-  <testcase name="testLionHasNoManeIfFemale" classname="LionTest" time="0.001"/>
-  <testcase name="testGetFoodUsesFeline" classname="LionTest" time="0.003"/>
+  <testcase name="testLionHasManeIfMale" classname="LionTest" time="0.003"/>
+  <testcase name="testLionHasNoManeIfFemale" classname="LionTest" time="0.003"/>
+  <testcase name="testGetFoodUsesFeline" classname="LionTest" time="0.002"/>
   <testcase name="testLionThrowsExceptionOnWrongSex" classname="LionTest" time="0.001"/>
 </testsuite>
